@@ -17,6 +17,9 @@
     "client"
   ],
   "devDependencies": {
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.49",
+    "tailwindcss": "^3.4.16",
     "turbo": "^2.3.3"
   },
   "packageManager": "npm@10.2.3"

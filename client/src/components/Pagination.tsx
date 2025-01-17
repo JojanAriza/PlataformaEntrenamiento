@@ -1,0 +1,30 @@
+import {FaChevronRight } from "react-icons/fa";
+
+export default function Pagination() {
+  return (
+    <div className="flex items-center justify-center p-4 bg-gray-100 rounded-lg ">
+      {/* Texto "8 registros por página" */}
+      <span className="text-gray-600 text-sm font-semibold">8 registros por página</span>
+
+      {/* Controles de paginación */}
+      <div className="flex items-center gap-2 ml-3">
+
+        {/* Números de página */}
+        <button className="px-3 py-1 text-sm font-semibold text-white bg-blue-600 rounded">
+          1
+        </button>
+        <button className="px-3 py-1 text-sm font-semibold text-gray-600 rounded hover:bg-blue-200">
+          2
+        </button>
+        <button className="px-3 py-1 text-sm font-semibold text-gray-600 rounded hover:bg-blue-200">
+          3
+        </button>
+
+        {/* Flecha derecha */}
+        <button className="p-2 text-gray-600 rounded hover:bg-blue-200">
+          <FaChevronRight />
+        </button>
+      </div>
+    </div>
+  );
+}
