@@ -1,6 +1,7 @@
+import { Link } from "react-router-dom";
 import { cursos } from "../data/cursos";
-import Pagination from "./Pagination";
-import SearchBar from "./SearchBar";
+import Pagination from "../components/Course/Pagination";
+import SearchBar from "../components/Course/SearchBar";
 
 export default function Course() {
 
@@ -14,7 +15,7 @@ export default function Course() {
       <SearchBar onSearch={handleSearch} />
       <div className="grid grid-cols-4 gap-6">
         {cursos.map((curso) => (
-          <div key={curso.id} className="bg-gray-200 shadow-lg rounded-lg overflow-hidden border border-gray-200">
+          <Link to={'/student/detail'} key={curso.id} className="bg-gray-200 shadow-lg rounded-lg overflow-hidden border border-gray-200">
             <div className="relative">
               {/* Imagen */}
               <img
@@ -34,7 +35,7 @@ export default function Course() {
               <h3 className="text-base font-semibold mb-2">{curso.titulo}</h3>
               <p className="text-sm text-gray-600 italic">{curso.estado}</p>
             </div>
-          </div>
+          </Link>
         ))}
       </div>
       <Pagination/>

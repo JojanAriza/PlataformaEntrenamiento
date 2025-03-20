@@ -1,14 +1,15 @@
 import { FaArrowLeft, FaClipboardCheck, FaDownload, FaCertificate } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 export default function CourseDetail() {
   return (
     <div className="p-6 bg-gray-100 flex flex-col items-center">
       {/* Volver */}
       <div className="w-full mb-4">
-        <button className="flex items-center text-gray-700 hover:text-gray-900 font-medium">
+        <Link to={'/'} className="flex items-center text-gray-700 hover:text-gray-900 font-medium">
           <FaArrowLeft className="mr-2" />
           Volver
-        </button>
+        </Link>
       </div>
 
       {/* Encabezado */}
@@ -26,13 +27,13 @@ export default function CourseDetail() {
       {/* Opciones */}
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-24 justify-center">
         {/* Encuesta de Satisfacción */}
-        <a
-          href="/encuesta"
+        <Link
+          to="/student/survey"
           className="flex flex-col items-center justify-center bg-gray-300 h-48 w-48 rounded-lg shadow-lg text-gray-700 hover:bg-gray-400 transition cursor-pointer"
         >
           <FaClipboardCheck className="text-6xl mb-3" />
           <p className="text-base font-semibold text-center">Encuesta de Satisfacción</p>
-        </a>
+        </Link>
 
          {/* Descarga de Material */}
          <a

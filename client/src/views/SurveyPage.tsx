@@ -1,6 +1,6 @@
-import HeaderSection from "./HeaderSection";
-import SurveySection from "./SurveySection";
-import FooterSection from "./FooterSection";
+import HeaderSection from "../components/survey/HeaderSection";
+import SurveySection from "../components/survey/SurveySection";
+import FooterSection from "../components/survey/FooterSection";
 
 export default function SurveyPage() {
   const questions = [

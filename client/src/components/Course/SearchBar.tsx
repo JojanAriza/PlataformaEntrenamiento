@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { FaTh, FaBars, FaSearch } from "react-icons/fa"; 
+import { Link } from "react-router-dom";
 
 type SearchBarProps = {
     onSearch: (term: string) => void;
@@ -40,12 +41,12 @@ export default function SearchBar({ onSearch }: SearchBarProps) {
       {/* Vista con Iconos */}
       <div className="flex items-center gap-4">
         <span className="text-gray-600 font-semibold">Vista</span>
-        <button className="text-gray-600 hover:text-blue-600 transition">
+        <Link to={'/student/list'} className="text-gray-600 hover:text-blue-600 transition">
           <FaBars size={20} />
-        </button>
-        <button className="text-gray-600 hover:text-blue-600 transition">
+        </Link >
+        <Link to={'/'} className="text-gray-600 hover:text-blue-600 transition">
           <FaTh size={20} />
-        </button>
+        </Link >
       </div>
     </div>
   );
