@@ -17,7 +17,7 @@ export default function SearchBar({ onSearch }: SearchBarProps) {
   };
 
   return (
-    <div className="flex items-center justify-between bg-gray-100 p-4 rounded mb-6">
+    <div className="flex items-center justify-between bg-gray-100  rounded mb-6">
       {/* Barra de Búsqueda */}
       <div className="flex items-center w-1/2 relative">
       <div className="absolute right-24 text-gray-400">
@@ -28,11 +28,11 @@ export default function SearchBar({ onSearch }: SearchBarProps) {
           value={searchTerm}
           onChange={(e) => setSearchTerm(e.target.value)}
           placeholder="Buscando..."
-          className="w-full p-2 rounded-full border border-gray-300 focus:outline-none px-4"
+          className="w-80 p-2 rounded-full border border-gray-300 focus:border-black focus:outline-none px-8"
         />
         <button
           onClick={handleSearch}
-          className="bg-blue-600 ml-3 text-white p-2 hover:bg-blue-700 transition"
+          className="bg-darkGray px-3 py-1 ml-3 text-white p-2 hover:bg-superDeepGray transition"
         >
           Buscar
         </button>
@@ -40,7 +40,7 @@ export default function SearchBar({ onSearch }: SearchBarProps) {
 
       {/* Vista con Iconos */}
       <div className="flex items-center gap-4">
-        <span className="text-gray-600 font-semibold">Vista</span>
+        <span className="text-gray-600 font-medium text-lg">Vista</span>
         <Link to={'/student/list'} className="text-gray-600 hover:text-blue-600 transition">
           <FaBars size={20} />
         </Link >
