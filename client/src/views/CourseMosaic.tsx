@@ -1,7 +1,7 @@
-import { cursos } from "../../data/cursos";
-import Pagination from "../Pagination";
-import SearchBar from "../SearchBar";
-import CourseCard from "./CourseCard"
+import { cursos } from "../data/cursos";
+import Pagination from "../components/Course/Pagination"
+import SearchBar from "../components/Course/SearchBar"
+import CourseCard from "../components/CourseCard"
 
 export default function CourseMosaic() {
   const handleSearch = (searchTerm:string) => {

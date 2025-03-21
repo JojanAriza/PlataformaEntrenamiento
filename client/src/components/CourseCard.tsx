@@ -1,12 +1,13 @@
-import { curso } from "../../data/cursos";
-
+import { curso } from "../data/cursos";
+import { Link } from "react-router-dom"
 export default function CourseCard({ id, tipo, titulo, estado, color }: curso) {
   // const imgUrl = "../../placeholder.png";
   return (
     <>
-      <div
+      <Link
         key={id}
         className="group bg-deepGray rounded-b-2xl overflow-hidden border border-gray-200 max-w-56"
+        to={"/student/detail"}
       >
         <div className="relative">
           {/* <img
@@ -32,12 +33,14 @@ export default function CourseCard({ id, tipo, titulo, estado, color }: curso) {
 
         {/* Contenido del curso */}
         <div className="pt-6 px-6 pb-4 group-hover:bg-brightBlue">
-          <h3 className="text-base font-semibold  mb-2 text-deadGray group-hover:text-white">{titulo}</h3>
+          <h3 className="text-base font-semibold  mb-2 text-deadGray group-hover:text-white">
+            {titulo}
+          </h3>
           <p className="text-xs text-600 text-azulito font-bold italic">
             {estado}
           </p>
         </div>
-      </div>
+      </Link>
     </>
   );
 }
