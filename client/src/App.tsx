@@ -1,15 +1,14 @@
-// import Course from "./components/Course"
-import CourseDetail from "./components/CourseDetail"
-// import CourseList from "./components/CourseList"
+import CourseMosaic from "./components/CourseMosaic/CourseMosaic"
+// import CourseDetail from "./components/CourseDetail"
+import CourseList from "./components/CourseList/CourseList"
 import Layout from "./components/layout/Layout"
-// import SurveyPage from "./components/survey/SurveyPage"
+import SurveyPage from "./components/survey/SurveyPage"
 function App() {
   return (
     <>
       <Layout>
-        {/* <Course /> */}
+        <CourseMosaic/>
         {/* <CourseList/> */}
-        <CourseDetail/>
         {/* <SurveyPage/> */}
       </Layout>
     </>

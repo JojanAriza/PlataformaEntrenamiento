@@ -2,8 +2,8 @@ import { FaBell, FaUserCircle } from "react-icons/fa";
 
 export default function Header() {
   return (
-    <header className="bg-gray-200 flex justify-between items-center p-6 py-4 shadow-md">
-    <h1 className="text-2xl font-bold text-gray-500 mt-8">Mi aprendizaje</h1>
+    <header className="bg-darkGray flex justify-between items-center p-6 py-4 shadow-md">
+    <h1 className="text-4xl font-bold text-superDeepGray mt-16 mb-6 ml-6">Mi aprendizaje</h1>
     <div className="flex items-center gap-4">
       <button className="text-gray-600 hover:text-gray-800">
         <FaBell size={22} />
