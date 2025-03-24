@@ -19,17 +19,20 @@ export default function SearchBar({ onSearch }: SearchBarProps) {
   return (
     <div className="flex items-center justify-between bg-gray-100  rounded mb-6">
       {/* Barra de Búsqueda */}
-      <div className="flex items-center w-1/2 relative">
-      <div className="absolute right-24 text-gray-400">
-          <FaSearch />
+      <div className="flex items-center w-1/2 ">
+        <div className="relative flex items-center">
+          <input
+            type="text"
+            value={searchTerm}
+            onChange={(e) => setSearchTerm(e.target.value)}
+            placeholder="Buscando..."
+            className="w-80 p-2 rounded-full border border-gray-300 focus:border-black focus:outline-none px-8"
+          />
+          <div className="text-gray-400 absolute right-4">
+              <FaSearch />
+          </div>
         </div>
-        <input
-          type="text"
-          value={searchTerm}
-          onChange={(e) => setSearchTerm(e.target.value)}
-          placeholder="Buscando..."
-          className="w-80 p-2 rounded-full border border-gray-300 focus:border-black focus:outline-none px-8"
-        />
+        
         <button
           onClick={handleSearch}
           className="bg-darkGray px-3 py-1 ml-3 text-white p-2 hover:bg-superDeepGray transition"
