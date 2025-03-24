@@ -6,49 +6,49 @@
     @font-face {
       font-family: Avenir Next LT Pro;
       font-weight: 400;
-      src: url(../public/Fonts/Avenir\ Next\ LT\ Pro/AvenirNextLTPro-Bold.ttf) format("tff");
+      src: url(Fonts/Avenir\ Next\ LT\ Pro/AvenirNextLTPro-Bold.ttf) format("tff");
     }
   } */
 
 @layer base {
     @font-face {
         font-family: 'Avenir Next LT Pro';
-        src: url('../public/Fonts/Avenir Next LT Pro/AvenirNextLTPro-Thin.ttf') format('truetype');
+        src: url('Fonts/AvenirNextLTPro/AvenirNextLTPro-Thin.ttf') format('truetype');
         font-weight: 100;
     }
     @font-face {
         font-family: 'Avenir Next LT Pro';
-        src: url('../public/Fonts/Avenir Next LT Pro/AvenirNextLTPro-Light.ttf') format('truetype');
+        src: url('Fonts/AvenirNextLTPro/AvenirNextLTPro-Light.ttf') format('truetype');
         font-weight: 300;
     }
     @font-face {
         font-family: 'Avenir Next LT Pro';
-        src: url('../public/Fonts/Avenir Next LT Pro/AvenirNextLTPro-Regular.ttf') format('truetype');
+        src: url('Fonts/AvenirNextLTPro/AvenirNextLTPro-Regular.ttf') format('truetype');
         font-weight: 400;
     }
     @font-face {
         font-family: 'Avenir Next LT Pro';
-        src: url('../public/Fonts/Avenir Next LT Pro/AvenirNextLTPro-Medium.ttf') format('truetype');
+        src: url('Fonts/AvenirNextLTPro/AvenirNextLTPro-Medium.ttf') format('truetype');
         font-weight: 500;
     }
     @font-face {
         font-family: 'Avenir Next LT Pro';
-        src: url('../public/Fonts/Avenir Next LT Pro/AvenirNextLTPro-Demi.ttf') format('truetype');
+        src: url('Fonts/AvenirNextLTPro/AvenirNextLTPro-Demi.ttf') format('truetype');
         font-weight: 600;
     }
     @font-face {
         font-family: 'Avenir Next LT Pro';
-        src: url('../public/Fonts/Avenir Next LT Pro/AvenirNextLTPro-Bold.ttf') format('truetype');
+        src: url('Fonts/AvenirNextLTPro/AvenirNextLTPro-Bold.ttf') format('truetype');
         font-weight: 700;
     }
     @font-face {
         font-family: 'Avenir Next LT Pro';
-        src: url('../public/Fonts/Avenir Next LT Pro/AvenirNextLTPro-Heavy.ttf') format('truetype');
+        src: url('Fonts/AvenirNextLTPro/AvenirNextLTPro-Heavy.ttf') format('truetype');
         font-weight: 800;
     }
     @font-face {
         font-family: 'Avenir Next LT Pro';
-        src: url('../public/Fonts/Avenir Next LT Pro/AvenirNextLTPro-Ultlt.ttf') format('truetype');
+        src: url('Fonts/AvenirNextLTPro/AvenirNextLTPro-Ultlt.ttf') format('truetype');
         font-weight: 900;
     }
 

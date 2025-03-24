@@ -1,9 +1,9 @@
-import { Layout, LayoutProps } from "./Layout";
+import { Layout, LayoutProps } from "../layout/Layout";
 
 const params: LayoutProps = {
   pages: [
     { label: "Mi perfil", url: "#profile" },
-    { label: "Mi aprendizaje", url: "#learning" },
+    { label: "Mi aprendizaje", url: "/" },
   ],
   startPage: 1,
 };

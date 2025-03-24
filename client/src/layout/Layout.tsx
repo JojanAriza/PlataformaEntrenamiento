@@ -26,7 +26,7 @@ export const Layout: React.FC<LayoutProps> = ({ pages, startPage }) => {
   }
 
   return (
-    <div className="flex flex-col w-full">
+    <div className="flex flex-col w-screen min-h-screen">
       <div
         style={{ gridTemplateColumns: "1fr 3fr" }}
         className="grid grid-cols-['1fr 3fr'] grid-rows-1 flex-grow min-h-screen"
@@ -34,7 +34,7 @@ export const Layout: React.FC<LayoutProps> = ({ pages, startPage }) => {
         <Sidebar pages={pages} />
         <div className="flex-1 flex flex-col">
           <Header label={pages[startPage].label} />
-          <main className="flex-1 flex justify-start h-fit overflow-auto bg-gray-100">
+          <main className="flex-1 flex justify-start h-fit overflow-auto bg-gray-100 w-screen md:w-full md:100%">
             <Outlet />
           </main>
         </div>
