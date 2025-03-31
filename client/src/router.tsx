@@ -2,7 +2,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import CourseDetail from "./views/CourseDetail"
 import CourseList from "./views/CourseList"
 import SurveyPage from "./views/SurveyPage"
-import { EstudianteView } from "./views/EstudianteView";
+import EstudianteView  from "./views/EstudianteView";
 import MiAprendizaje from "./views/MiAprendizaje";
 
 

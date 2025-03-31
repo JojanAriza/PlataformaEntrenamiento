@@ -1,6 +1,6 @@
 import Footer from "./Footer";
 import { Outlet } from "react-router-dom";
-import { Sidebar, Links } from "./Sidebar";
+import { Sidebar, Links } from "./SideBar";
 import { Header } from "./Header";
 
 export type LayoutProps = {
@@ -15,7 +15,7 @@ class InvalidIndexError extends Error {
   }
 }
 
-export const Layout: React.FC<LayoutProps> = ({ pages, startPage }) => {
+export default function Layout({ pages, startPage }: LayoutProps) {
   const startPageIsValid = startPage >= 0 && startPage < pages.length;
   if (!startPageIsValid) {
     const wrongPage = startPage;
@@ -34,7 +34,7 @@ export const Layout: React.FC<LayoutProps> = ({ pages, startPage }) => {
         <Sidebar pages={pages} />
         <div className="flex-1 flex flex-col">
           <Header label={pages[startPage].label} />
-          <main className="flex-1 flex justify-start h-fit overflow-auto bg-gray-100 w-screen md:w-full md:100%">
+          <main className="flex-1 flex h-fit overflow-auto bg-gray-100 w-screen md:w-full">
             <Outlet />
           </main>
         </div>
@@ -42,6 +42,4 @@ export const Layout: React.FC<LayoutProps> = ({ pages, startPage }) => {
       <Footer />
     </div>
   );
-};
-
-export default Layout;
+}

@@ -4,7 +4,7 @@ type buttonParams = {
   text?: string;
 };
 
-export default function ({ theme = "light-gray", text }: buttonParams) {
+export default function SquareButton({ theme = "light-gray", text }: buttonParams) {
   const themes = {
     "light-gray": "bg-darkGray text-white p-2 hover:bg-darkBlue ",
     "dark-gray": "bg-superDeepGray text-white hover:bg-superDeepGray ",

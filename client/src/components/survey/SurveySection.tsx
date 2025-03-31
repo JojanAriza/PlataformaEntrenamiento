@@ -1,21 +1,19 @@
 type SurveySectionProps = {
     questions: string[];
     commentLabel: string;
+    description: string;
+    title: string
 };
 
-export default function SurveySection({
-    questions,
-    commentLabel,
-}: SurveySectionProps) {
+export default function SurveySection({questions, commentLabel, description, title}: SurveySectionProps) {
     // Colores para los números
     const colors = ["bg-red-600", "bg-orange-600", "bg-violet-600", "bg-blue-600", "bg-green-600"]; // Rojo, Naranja, Amarillo, Azul, Verde
 
     return (
       <div className="p-6 bg-gray-100">
-        <h2 className="text-xl font-semibold mb-4 ">Instructor</h2>
+        <h2 className="text-xl font-semibold mb-4 ">{title}</h2>
         <p className="text-gray-700 mb-6 ">
-          De las afirmaciones indique qué tan de acuerdo está, donde 1 es muy en
-          desacuerdo y 5 muy de acuerdo:
+          {description}
         </p>
 
         <div className="bg-gray-300">
@@ -86,12 +84,6 @@ export default function SurveySection({
           ></textarea>
         </div>
 
-        {/* Botón */}
-        <div className="mt-6 flex justify-center">
-          <button className="bg-blue-500 text-white px-6 py-2 rounded-lg hover:bg-blue-700">
-            Siguiente &gt;&gt;
-          </button>
-        </div>
       </div>
     );
 }

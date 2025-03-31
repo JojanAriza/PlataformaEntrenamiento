@@ -1,4 +1,4 @@
-import { Layout, LayoutProps } from "../layout/Layout";
+import Layout, {LayoutProps } from "../layout/Layout";
 
 const params: LayoutProps = {
   pages: [
@@ -8,4 +8,9 @@ const params: LayoutProps = {
   startPage: 1,
 };
 
-export const EstudianteView: React.FC<{}> = () => <Layout {...params} />;
+
+export default function EstudianteView() {
+  return (
+    <Layout {...params} />
+  )
+}

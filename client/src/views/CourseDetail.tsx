@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 export default function CourseDetail() {
   return (
-    <div className="p-6 bg-gray-100 flex flex-col items-center">
+    <div className="p-6 bg-gray-100 flex flex-col items-center w-full">
       {/* Volver */}
       <div className="w-full mb-4">
         <Link to={'/'} className="flex items-center text-gray-700 hover:text-gray-900 font-medium">
