@@ -12,7 +12,7 @@ export default function CourseList() {
         <div className="py-6 px-10 space-y-2 w-full">
             <SearchBar onSearch={handleSearch} />
             {cursos.map((curso) => (
-                <CourseRow {...curso}></CourseRow>
+                <CourseRow {...curso} key={curso.id}></CourseRow>
             ))}
              <Pagination/>
         </div>
