@@ -1,4 +1,4 @@
-import CourseCard from "../components/CourseCard";
+import CourseCard from "../components/Course/CourseCard";
 import { curso } from "../data/cursos";
 
 type MosaicParams = { cursos: curso[] };

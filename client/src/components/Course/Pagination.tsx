@@ -3,8 +3,6 @@ import {FaChevronRight } from "react-icons/fa";
 export default function Pagination() {
   return (
     <div className="flex items-center justify-center p-4 bg-gray-100 rounded-lg ">
-      {/* Texto "8 registros por página" */}
-      <span className="text-superDeepGray text-sm font-normal italic">8 registros por página</span>
 
       {/* Controles de paginación */}
       <div className="flex items-center gap-2 ml-3">

@@ -1,4 +1,4 @@
-import { curso } from "../data/cursos";
+import { curso } from "../../data/cursos";
 import { Link } from "react-router-dom"
 
 export default function CourseRow({ id, color, tipo, titulo, estado }: curso) {

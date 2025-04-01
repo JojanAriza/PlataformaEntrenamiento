@@ -1,7 +1,7 @@
 import { cursos } from "../data/cursos";
 import Pagination from "../components/Course/Pagination"
 import SearchBar from "../components/Course/SearchBar"
-import CourseRow from "../components/CourseRow";
+import CourseRow from "../components/Course/CourseRow";
 
 export default function CourseList() {
     const handleSearch = (searchTerm:string) => {

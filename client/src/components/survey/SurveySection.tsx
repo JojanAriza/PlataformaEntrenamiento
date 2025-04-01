@@ -5,6 +5,8 @@ type SurveySectionProps = {
     title: string
 };
 
+
+
 export default function SurveySection({questions, commentLabel, description, title}: SurveySectionProps) {
     // Colores para los números
     const colors = ["bg-red-600", "bg-orange-600", "bg-violet-600", "bg-blue-600", "bg-green-600"]; // Rojo, Naranja, Amarillo, Azul, Verde
@@ -78,7 +80,7 @@ export default function SurveySection({questions, commentLabel, description, tit
           </label>
           <textarea
             id="comments"
-            className="w-full border border-gray-300 rounded-lg p-3"
+            className="w-full border border-gray-300 rounded-lg p-3 "
             rows={4}
             placeholder="Escribe aquí tus comentarios"
           ></textarea>
