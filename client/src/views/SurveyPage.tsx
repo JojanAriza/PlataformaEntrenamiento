@@ -65,7 +65,7 @@ export default function SurveyPage() {
         )}
 
         {/* Pie de Página */}
-        <FooterSection onGoBack={() => console.log("Volver a aprendizaje")} />
+        <FooterSection />
       </div>
     </div>
   );

@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 export default function CourseDetail() {
   return (
-    <div className="p-6 bg-gray-100 flex flex-col items-center w-full">
+    <div className="p-6 bg-gray-100 flex flex-col items-center w-full h-auto">
       {/* Volver */}
       <div className="w-full mb-4">
         <Link to={'/'} className="flex items-center text-gray-700 hover:text-gray-900 font-medium">
@@ -25,7 +25,7 @@ export default function CourseDetail() {
       </div>
 
       {/* Opciones */}
-      <div className="grid grid-cols-1 sm:grid-cols-3 gap-24 justify-center">
+      <div className="grid grid-cols-1 sm:grid-cols-3 gap-24 justify-center mt-20">
         {/* Encuesta de Satisfacción */}
         <Link
           to="/student/survey"
@@ -38,7 +38,7 @@ export default function CourseDetail() {
          {/* Descarga de Material */}
          <a
           href="/descargar-material"
-          className="flex flex-col items-center justify-center bg-gray-300 h-48 w-48 rounded-lg shadow-lg text-gray-700 hover:bg-gray-400 transition cursor-pointer relative"
+          className="flex flex-col items-center justify-center  bg-gray-300 h-48 w-48 rounded-lg shadow-lg text-gray-700 hover:bg-gray-400 transition cursor-pointer relative"
         >
           <FaDownload className="absolute top-2 right-2 text-gray-600 text-xl" />
           <FaDownload className="text-6xl mb-3" />

@@ -4,6 +4,7 @@ import CourseList from "./views/CourseList"
 import SurveyPage from "./views/SurveyPage"
 import EstudianteView  from "./views/EstudianteView";
 import MiAprendizaje from "./views/MiAprendizaje";
+import Profile from "./views/Profile";
 
 
 
@@ -16,6 +17,7 @@ export default function Router() {
                     <Route path="/student/list" element={<CourseList/>} index/>
                     <Route path="/student/detail" element={<CourseDetail/>} index/>
                     <Route path="/student/survey" element={<SurveyPage/>} index/>
+                    <Route path="/student/profile" element={<Profile/>} index/>
                     {/* <Route path="/testing/" element={<Testing/>}/> */}
                 </Route>
             </Routes>

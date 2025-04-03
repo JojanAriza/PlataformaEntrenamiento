@@ -1,15 +1,14 @@
-type FooterSectionProps = {
-    onGoBack: () => void;
-  };
-export default function FooterSection({ onGoBack }: FooterSectionProps) {
+import { Link } from "react-router-dom";
+
+export default function FooterSection() {
     return (
       <div className="bg-gray-200 p-4 text-center">
-        <button
-          onClick={onGoBack}
+        <Link
+          to='/'
           className="text-blue-500 hover:underline text-sm font-medium"
         >
           &lt;&lt; Volver mi aprendizaje
-        </button>
+        </Link>
       </div>
     );
   }
