@@ -1,4 +1,4 @@
-import ProfileDetails from "../components/profile/ProfileDetails";
+import ProfileDetails from "./ProfileDetails";
 const userProfile = {
     username: "marijose_20",
     fullName: "Marijose Pérez",

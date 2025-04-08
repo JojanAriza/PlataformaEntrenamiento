@@ -1,9 +1,9 @@
-import HeaderSection from "../components/survey/HeaderSection";
-import SurveySection from "../components/survey/SurveySection";
-import FooterSection from "../components/survey/FooterSection";
-import Buttons from "../components/survey/Buttons";
+import HeaderSection from "./HeaderSection";
+import SurveySection from "./SurveySection";
+import FooterSection from "./FooterSection";
+import Buttons from "./Buttons";
 import { useState } from "react";
-import SurveyComments from "../components/survey/SurveyComment";
+import SurveyComments from "./SurveyComment";
 
 export default function SurveyPage() {
   const instructorQuestions = [

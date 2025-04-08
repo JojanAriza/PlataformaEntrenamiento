@@ -24,6 +24,7 @@
   },
   "packageManager": "npm@10.2.3",
   "dependencies": {
+    "react-icons": "^5.5.0",
     "react-router-dom": "^7.4.0"
   }
 }

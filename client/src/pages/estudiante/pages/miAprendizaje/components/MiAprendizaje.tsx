@@ -1,7 +1,7 @@
-import { cursos as testCourses } from "../data/cursos";
-import Pagination from "../components/Course/Pagination";
-import SearchBar from "../components/Course/SearchBar";
-import CourseMosaic from "./CourseMosaic";
+import { cursos as testCourses } from "@/data/cursos";
+import Pagination from "@/components/Pagination";
+import SearchBar from "@/components/SearchBar";
+import CourseMosaic from "@/pages/estudiante/pages/miAprendizaje/components/CourseMosaic";
 
 export default function MiAprendizaje() {
   const handleSearch = (searchTerm: string) => {

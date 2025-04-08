@@ -1,4 +1,4 @@
-import Layout, {LayoutProps } from "../layout/Layout";
+import Layout, {LayoutProps } from "../../../components/Layout";
 
 const params: LayoutProps = {
   pages: [

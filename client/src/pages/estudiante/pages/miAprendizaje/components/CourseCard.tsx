@@ -1,4 +1,4 @@
-import { curso } from "../../data/cursos";
+import { curso } from "@/models/curso";
 import { Link } from "react-router-dom"
 export default function CourseCard({ id, tipo, titulo, estado, color }: curso) {
   // const imgUrl = "../../placeholder.png";

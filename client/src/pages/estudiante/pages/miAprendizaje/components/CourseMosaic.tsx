@@ -1,5 +1,5 @@
-import CourseCard from "../components/Course/CourseCard";
-import { curso } from "../data/cursos";
+import CourseCard from "./CourseCard";
+import { curso } from "@/models/curso";
 
 type MosaicParams = { cursos: curso[] };
 
