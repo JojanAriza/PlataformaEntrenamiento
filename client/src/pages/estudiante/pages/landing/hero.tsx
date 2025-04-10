@@ -6,7 +6,6 @@ export default function hero() {
       style={{ backgroundImage: "url('/fondo_banner.png')" }}
     >
 
-{/* Contenido principal */}
 <div className="relative z-10 max-w-4xl px-6 text-white text-left">
   <h1 className="text-4xl md:text-5xl font-bold mb-4">
     Portal de estudiantes
