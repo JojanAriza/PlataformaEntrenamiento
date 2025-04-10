@@ -1,0 +1,77 @@
+{
+  "courses": [
+    {
+      "id": 1,
+      "tipo": "Diplomado",
+      "titulo": "ArcGIS Online: Flujos de trabajo esenciales",
+      "estado": "Completado o En curso",
+      "color": "bg-purpleSeance",
+      "encuesta": "test",
+      "material": "test",
+      "certificado": "test"
+    },
+    {
+      "id": 2,
+      "tipo": "Laboratorio",
+      "titulo": "ArcGIS Online: Flujos de trabajo esenciales",
+      "estado":"Completado o En curso",
+      "color": "bg-greenGoblin",
+      "material": "test",
+      "certificado": "test"
+    },
+    {
+      "id": 3,
+      "tipo": "Curso guiado",
+      "titulo": "ArcGIS Online: Flujos de trabajo esenciales",
+      "estado": "Completado o En curso",
+      "color": "bg-blueIndigo",
+      "material": "test",
+      "certificado": "test"
+    },
+    {
+      "id": 4,
+      "tipo": "Taller",
+      "titulo": "ArcGIS Online: Flujos de trabajo esenciales",
+      "estado": "Completado o En curso",
+      "color": "bg-orangeOchre",
+      "material": "test",
+      "certificado": "test"
+    },
+    {
+      "id": 5,
+      "tipo": "Master Class",
+      "titulo": "ArcGIS Online: Flujos de trabajo esenciales",
+      "estado": "Completado o En curso",
+      "color": "bg-aquaMarine",
+      "material": "test",
+      "certificado": "test"
+    },
+    {
+      "id": 6,
+      "tipo": "Laboratorio",
+      "titulo": "ArcGIS Online: Flujos de trabajo esenciales",
+      "estado": "Completado o En curso",
+      "color": "bg-greenGoblin",
+      "material": "",
+      "certificado": ""
+    },
+    {
+      "id": 7,
+      "tipo": "Curso guiado",
+      "titulo": "ArcGIS Online: Flujos de trabajo esenciales",
+      "estado": "Completado o En curso",
+      "color": "bg-blueIndigo",
+      "material": "test",
+      "certificado": "test"
+    },
+    {
+      "id": 8,
+      "tipo": "Diplomado",
+      "titulo": "ArcGIS Online: Flujos de trabajo esenciales",
+      "estado": "Completado o En curso",
+      "color": "bg-purpleSeance",
+      "material": "",
+      "certificado": ""
+    }
+  ]
+}

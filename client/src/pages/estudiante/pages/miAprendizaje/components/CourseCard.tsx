@@ -6,9 +6,9 @@ export default function CourseCard({ id, tipo, titulo, estado, color }: curso) {
     <>
       <Link
         key={id}
-        className="group bg-deepGray rounded-b-lg overflow-hidden border border-gray-200 max-w-56
-        md:rounded-b-2xl"
-        to={"/student/detail"}
+        className="group bg-deepGray rounded-b-lg overflow-hidden border border-gray-200 w-56
+        md:rounded-b-2xl grid grid-cols-1 grid-rows-[1fr 2fr]"
+        to={"/student/detail/"+id}
       >
         <div className="relative">
           {/* <img
@@ -33,7 +33,7 @@ export default function CourseCard({ id, tipo, titulo, estado, color }: curso) {
         </div>
 
         {/* Contenido del curso */}
-        <div className="flex flex-col justify-between pt-6 md:px-6 px-1 md:pb-4 pb-2 group-hover:bg-brightBlue">
+        <div className="flex flex-col justify-between h-full pt-6 md:px-6 px-1 md:pb-4 pb-2 group-hover:bg-brightBlue">
           <h3 className="md:text-base text-[0.7rem] font-semibold  text-deadGray group-hover:text-white">
             {titulo}
           </h3>

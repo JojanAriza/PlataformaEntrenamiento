@@ -12,10 +12,11 @@ class EmptyList extends Error {
 
 export default function CourseMosaic({ cursos }: MosaicParams) {
   // console.log(cursos);
-  if (cursos.length == 0)
-    throw new EmptyList(
-      "Se debe pasar al menos un curso para construir el mosaico"
-    );
+  if (cursos.length == 0) {
+    return <div className="h-full w-full text-center font-semibold">
+      No hay cursos para mostrar
+    </div>;
+  }
 
   return (
     <div className="py-6 px-0 md:px-4 w-full flex justify-center">

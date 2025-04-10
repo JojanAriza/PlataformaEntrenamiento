@@ -11,14 +11,14 @@ export const cursos: curso[] = [
   {
     id: 2,
     tipo: "Laboratorio",
-    titulo: "ArcGIS Online: Flujos de trabajo esenciales",
+    titulo: "Laboratorio SIG",
     estado: "Completado o En curso",
     color: "bg-greenGoblin",
   },
   {
     id: 3,
     tipo: "Curso guiado",
-    titulo: "ArcGIS Online: Flujos de trabajo esenciales",
+    titulo: "Curso avanzado de SIG",
     estado: "Completado o En curso",
     color: "bg-blueIndigo",
   },

@@ -11,9 +11,13 @@ export default function Router() {
     <BrowserRouter>
       <Routes>
         <Route element={<EstudianteView />}>
-          <Route path="/" element={<MiAprendizaje />} index />
+          <Route path="/" element={<MiAprendizaje/>} index />
           <Route path="/student/list" element={<CourseList />} index />
-          <Route path="/student/detail" element={<CourseDetail />} index />
+          <Route
+            path="/student/detail/:courseId"
+            element={<CourseDetail />}
+            index
+          />
           <Route path="/student/survey" element={<SurveyPage />} index />
           <Route path="/student/profile" element={<Profile />} index />
           {/* <Route path="/testing/" element={<Testing/>}/> */}

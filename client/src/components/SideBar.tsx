@@ -46,7 +46,7 @@ export const Sidebar: React.FC<SidebarProps> = ({ pages }) => {
       {show ? (
         <nav
           className="relative -top-3 left-3 flex flex-col w-full divide-y-[1px]
-        md:static md:row-start-2 md:row-end-6 md:mt-28 "
+        md:static md:row-start-2 md:row-end-6 md:mt-28 md:border-b-[1px]"
         >
           {pages.map(({ label, url }, idx) => (
             <a
