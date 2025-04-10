@@ -1,6 +1,6 @@
 
 // Ejemplo con react-icons, instala con: npm install react-icons
-import { FaFacebookF, FaTwitter, FaYoutube, FaLinkedinIn, FaInstagram } from 'react-icons/fa';
+import { FaFacebookF, FaYoutube, FaLinkedinIn, FaInstagram } from 'react-icons/fa';
 import { FaSquareXTwitter } from 'react-icons/fa6';
 
 export default function Footer() {
