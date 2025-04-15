@@ -5,7 +5,7 @@ import SurveyPage from "@/pages/estudiante/pages/survey/components/SurveyPage";
 import EstudianteView from "@/pages/estudiante/components/EstudianteView";
 import MiAprendizaje from "@/pages/estudiante/pages/miAprendizaje/components/MiAprendizaje";
 import Profile from "./pages/estudiante/pages/perfil/components/Profile";
-import Landing from "./pages/estudiante/pages/landing/landing";
+import Landing from "./pages/landing/components/landing";
 
 export default function Router() {
   return (

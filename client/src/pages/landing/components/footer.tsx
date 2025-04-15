@@ -1,7 +1,12 @@
-
 // Ejemplo con react-icons, instala con: npm install react-icons
-import { FaFacebookF, FaYoutube, FaLinkedinIn, FaInstagram } from 'react-icons/fa';
-import { FaSquareXTwitter } from 'react-icons/fa6';
+import {
+  FaFacebookF,
+  FaYoutube,
+  FaLinkedinIn,
+  FaInstagram,
+  FaGlobe,
+} from "react-icons/fa";
+import { FaSquareXTwitter } from "react-icons/fa6";
 
 export default function Footer() {
   return (
@@ -12,28 +17,24 @@ export default function Footer() {
           {/* Sección de Branding e Iconos (col 1 en pantallas md) */}
           <div className="flex flex-col items-start space-y-4">
             {/* Logo: Ajusta el alto al que necesites */}
-            <img 
-              src="/science-icon.svg" 
-              alt="Brand Logo" 
-              className="h-36" 
-            />
+            <img src="/science-icon.svg" alt="Brand Logo" className="h-36" />
 
             {/* Íconos de redes sociales */}
             <div className="flex space-x-2 text-gray-600">
               <a href="#facebook" className="hover:text-blue-600">
-                <FaFacebookF className='text-lg'/>
+                <FaFacebookF className="text-lg" />
               </a>
               <a href="#instagram" className="hover:text-blue-600">
-                <FaInstagram className='text-lg'/>
+                <FaInstagram className="text-lg" />
               </a>
               <a href="#youtube" className="hover:text-blue-600">
-                <FaYoutube className='text-lg'/>
+                <FaYoutube className="text-lg" />
               </a>
               <a href="#linkedin" className="hover:text-blue-600">
-                <FaLinkedinIn className='text-lg'/>
+                <FaLinkedinIn className="text-lg" />
               </a>
               <a href="#twitter" className="hover:text-blue-600">
-                <FaSquareXTwitter className='text-lg'/>
+                <FaSquareXTwitter className="text-lg" />
               </a>
             </div>
           </div>
@@ -58,7 +59,7 @@ export default function Footer() {
                 </li>
                 <li>
                   <a href="#busque-partners" className="hover:text-blue-600">
-                    Busque Partners
+                    Business Partners
                   </a>
                 </li>
                 <li>
@@ -68,7 +69,7 @@ export default function Footer() {
                 </li>
                 <li>
                   <a href="#recursos" className="hover:text-blue-600">
-                    Recursos, guías, tachn y Webinars
+                    Peticiones, quejas, reclamos y felicitaciones
                   </a>
                 </li>
               </ul>
@@ -81,8 +82,18 @@ export default function Footer() {
               </h3>
               <ul className="space-y-2 text-sm text-gray-600">
                 <li>
+                  <a href="#sig" className="hover:text-blue-600">
+                    ¿Qué son los SIG?
+                  </a>
+                </li>
+                <li>
                   <a href="#entrenamiento" className="hover:text-blue-600">
                     Entrenamiento
+                  </a>
+                </li>
+                <li>
+                  <a href="#cifras" className="hover:text-blue-600">
+                    Esri en cifras
                   </a>
                 </li>
                 <li>
@@ -101,17 +112,22 @@ export default function Footer() {
               <ul className="space-y-2 text-sm text-gray-600">
                 <li>
                   <a href="#arcgis" className="hover:text-blue-600">
-                    ArcGIS
+                    ¿Qué es ArcGIS?
                   </a>
                 </li>
                 <li>
-                  <a href="#arcgis-online" className="hover:text-blue-600">
-                    ArcGIS Online
+                  <a href="#sig" className="hover:text-blue-600">
+                    ¿Qué son los SIG?
                   </a>
                 </li>
                 <li>
                   <a href="#mas-productos" className="hover:text-blue-600">
                     Todos nuestros productos
+                  </a>
+                </li>
+                <li>
+                  <a href="#tienda" className="hover:text-blue-600">
+                    Tienda virtual
                   </a>
                 </li>
                 <li>
@@ -174,8 +190,13 @@ export default function Footer() {
 
         {/* Separador e información final */}
         <hr className="border-gray-300 mb-4" />
-        <div className="text-xs text-gray-500 text-center">
-          © Esri Colombia C.A NIT 901.194.145
+        <div className="text-xs text-gray-500 flex flex-col md:flex-row justify-between items-center gap-2 text-center md:text-left">
+          <div className="flex items-center gap-1">
+            <FaGlobe className="text-sm" />
+            Colombia (Spanish)
+          </div>
+          <div>© Esri Colombia – Calle 90 # 13-40</div>
+          <div>Tel: +57 601 650 1550</div>
         </div>
       </div>
     </footer>
